@@ -25,7 +25,7 @@ namespace AlphaSplit
 
 
             CaseName name11 = new CaseName("Lopezo", "Jacob"); // 3;            
-            CaseName name12 = new CaseName("Reyes-Guzman", "Geronimo"); // 4;
+            CaseName name12 = new CaseName("Reyes-Jarman", "Geronimo"); // 4;
             CaseName name13 = new CaseName("Lopez-Guzman", "Jacob"); // 3;
 
 
