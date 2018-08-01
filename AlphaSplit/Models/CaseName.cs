@@ -36,20 +36,11 @@ namespace AlphaSplit.Models
             string formattedName = LastName.Substring(0, lastNameLength).ToLower() +
                                    " " +
                                    FirstName.Substring(0, firstNameLength).ToLower();
-            //formattedName = CaseName.StripUnwantedChars(formattedName);
 
             string comparedName = ruleCaseName.LastName.ToLower() + " " + ruleCaseName.FirstName.ToLower();
-            //comparedName = CaseName.StripUnwantedChars(comparedName);
 
             return String.CompareOrdinal(formattedName, comparedName);
         }
-
-        //private static string StripUnwantedChars(string str)
-        //{
-        //    string resultString = Regex.Replace(str, @"[\-]", "");
-        //    return resultString;
-        //}
-
 
         public bool InAlphaRange(CaseName lowerBound, CaseName upperBound, 
                                     bool keepLastNameLenVsLowerBound = false,
